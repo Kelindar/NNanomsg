@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     public unsafe class NanomsgWriteStream : Stream
     {

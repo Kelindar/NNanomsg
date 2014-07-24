@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace NNanomsg.UnitTests
+namespace Misakai.Messaging.Nano.UnitTests
 {
     public static class TestExtensions
     {

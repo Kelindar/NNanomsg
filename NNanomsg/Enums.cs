@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     public enum Domain
     {

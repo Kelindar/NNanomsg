@@ -4,7 +4,7 @@ using System.Threading;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
 
     public abstract class NanomsgSocketBase : IDisposable

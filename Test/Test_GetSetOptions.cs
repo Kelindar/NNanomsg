@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using NNanomsg;
+using Misakai.Messaging.Nano;
 
 namespace Test
 {

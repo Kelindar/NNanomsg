@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     public static class NanomsgSymbols
     {

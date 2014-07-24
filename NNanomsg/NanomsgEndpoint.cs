@@ -1,4 +1,4 @@
-﻿namespace NNanomsg
+﻿namespace Misakai.Messaging.Nano
 {
     public struct NanomsgEndpoint
     {

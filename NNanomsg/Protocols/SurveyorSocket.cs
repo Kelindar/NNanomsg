@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace NNanomsg.Protocols
+namespace Misakai.Messaging.Nano.Protocols
 {
     public class SurveyorSocket : NanomsgSocketBase, IConnectSocket, IBindSocket, ISendSocket, IReceiveSocket
     {

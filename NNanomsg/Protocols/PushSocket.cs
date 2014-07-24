@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace NNanomsg.Protocols
+namespace Misakai.Messaging.Nano.Protocols
 {
     public class PushSocket : NanomsgSocketBase, ISendSocket, IBindSocket, IConnectSocket
     {

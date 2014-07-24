@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.Text;
-using NNanomsg;
-using NNanomsg.Protocols;
+using Misakai.Messaging.Nano;
+using Misakai.Messaging.Nano.Protocols;
 
 namespace Example
 {

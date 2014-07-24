@@ -2,7 +2,7 @@
 using System.IO;
 using System.Threading;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     public interface INativeDisposer<T>
     {

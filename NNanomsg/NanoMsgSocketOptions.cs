@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     /// <summary>
     /// Provides access to a sockets various settings.  Each read or write marshals to the native library, so avoid preventable property access.

@@ -1,7 +1,7 @@
 ﻿using System;
-using NNanomsg;
+using Misakai.Messaging.Nano;
 using System.IO;
-using NNanomsg.Protocols;
+using Misakai.Messaging.Nano.Protocols;
 
 namespace Example
 {

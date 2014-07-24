@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Collections.Generic;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     public class NanomsgException : ExternalException
     {

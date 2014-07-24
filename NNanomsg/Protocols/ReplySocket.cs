@@ -1,4 +1,4 @@
-﻿namespace NNanomsg.Protocols
+﻿namespace Misakai.Messaging.Nano.Protocols
 {
     public class ReplySocket : NanomsgSocketBase, IBindSocket, ISendSocket, IReceiveSocket
     {

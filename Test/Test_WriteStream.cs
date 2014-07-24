@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
-using NNanomsg.Protocols;
+using Misakai.Messaging.Nano.Protocols;
 
 namespace Test
 {

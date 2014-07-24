@@ -1,4 +1,5 @@
 ﻿using System;
+using Misakai.Messaging.Nano;
 
 namespace Test
 {
@@ -10,7 +11,7 @@ namespace Test
             for (; ; i += 1)
             {
                 int v;
-                string s = NNanomsg.NN.Symbol(i, out v);
+                string s = NN.Symbol(i, out v);
                 if (s == null)
                 {
                     break;

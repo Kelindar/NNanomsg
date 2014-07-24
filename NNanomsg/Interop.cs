@@ -3,8 +3,9 @@ using System.Runtime.InteropServices;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using Misakai.Messaging.Nano.Properties;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     [StructLayout(LayoutKind.Sequential)]
     unsafe struct nn_iovec
@@ -74,7 +75,11 @@ namespace NNanomsg
         {
             string libFile = libName + ".dll";
             string rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string assemblyDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);  
+            string assemblyDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
+            var nanomsg = Path.Combine(rootDirectory, libFile);
+            if (!File.Exists(nanomsg))
+                File.WriteAllBytes(nanomsg, Environment.Is64BitProcess ? Resources.x64_nanomsg : Resources.x86_nanomsg);
 
             var paths = new[]
                 {
@@ -111,6 +116,10 @@ namespace NNanomsg
             const int RTLD_NOW = 2;
             string libFile = "lib" + libName.ToLower() + ".so";
             string rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
+            var nanomsg = Path.Combine(rootDirectory, libFile);
+            if (!File.Exists(nanomsg))
+                File.WriteAllBytes(nanomsg, Environment.Is64BitProcess ? Resources.x64_libnanomsg : Resources.x86_libnanomsg);
 
             var paths = new[]
                 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     public static class MemoryUtils
     {

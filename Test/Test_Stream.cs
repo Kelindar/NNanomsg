@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NNanomsg;
+using Misakai.Messaging.Nano;
 using System.Diagnostics;
 
 namespace Test

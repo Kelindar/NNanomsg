@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Threading;
 
-namespace NNanomsg
+namespace Misakai.Messaging.Nano
 {
     public class NanomsgListener
     {

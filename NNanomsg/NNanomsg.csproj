@@ -10,15 +10,15 @@
     <ProjectGuid>{771786BF-42FA-491E-9FB3-29910F15CC5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NNanomsg</RootNamespace>
-    <AssemblyName>NNanomsg</AssemblyName>
+    <RootNamespace>Misakai.Messaging.Nano</RootNamespace>
+    <AssemblyName>Misakai.Messaging.Nano</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -59,6 +59,11 @@
     <Compile Include="NN.cs" />
     <Compile Include="Listener.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Protocols\BusSocket.cs" />
     <Compile Include="Protocols\PairSocket.cs" />
     <Compile Include="Protocols\PublishSocket.cs" />
@@ -71,20 +76,16 @@
     <Compile Include="Protocols\SurveyorSocket.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="x64\nanomsg.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="x86\nanomsg.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Resources\x64_libnanomsg.so" />
+    <None Include="Resources\x64_nanomsg.dll" />
+    <None Include="Resources\x86_libnanomsg.so" />
+    <None Include="Resources\x86_nanomsg.dll" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="x64\libnanomsg.so">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="x86\libnanomsg.so">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
